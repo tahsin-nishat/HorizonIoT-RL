@@ -1,0 +1,22 @@
+cff-version: 1.0.0
+title: "HorizonIoT-RL: Reinforcement Learning for Long-Horizon Management of Resource-Constrained IoT Systems"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - last-name: Nishat
+    first-name: Tahsin
+  - last-name: Jo
+    first-name: Hongki
+repository-code: "https://github.com/your-username/HorizonIoT-RL"
+abstract: "HorizonIoT-RL is a reinforcement learning framework for long-horizon energy-aware management of resource-constrained IoT sensing networks."
+keywords:
+  - reinforcement learning
+  - Internet of Things
+  - wireless sensor networks
+  - energy management
+  - action masking
+  - recurrent reinforcement learning
+  - structural health monitoring
+license: MIT
+version: 1.0.0
+date-released: 2026-02-05
