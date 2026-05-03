@@ -440,7 +440,13 @@ class Jindo(Env):
 
     def get_action_mask(self):
         """
-        Returns a MultiDiscrete-compatible action mask with shape (num_nodes, 3).
+        Compute the feasibility mask for the current system state.
+    
+        Returns
+        -------
+        np.ndarray
+            Boolean mask indicating which actions are valid under current
+            battery, service-quality, and network-operation constraints.
         """
         # Start with all-True, shape (N, 3)
         mask = np.ones((self.totalCHnum, 3), dtype=bool)
@@ -475,14 +481,14 @@ class Jindo(Env):
         current_active = np.sum(active_node.astype(int))
         if current_active > 3:
             mask[idle_node, 0] = False  # mask out 'active' toggle for idle
-            mask[sleep_node, 0] = False  # mask out 'active' toggle for sleep"""
+            mask[sleep_node, 0] = False  # mask out 'active' toggle for sleep
             
         """
         if current_active <= 2:
             mask[:, 1] = False  # mask out 'sleep' toggle
         """
 
-        return mask.reshape(-1) #mask flattening (?)
+        return mask.reshape(-1) #mask flattening 
 
     def render(self, mode='human'):
         """
