@@ -40,13 +40,13 @@ If you use this repository, please cite both the paper and the software package.
   year={2026}
 }
 ```
-### Paper
+### Software
 ```bibtex
 @software{horizoniotrl2026,
   title={HorizonIoT-RL},
   author={Nishat, Tahsin and Jo, Hongki},
   year={2026},
-  url={https://github.com/your-username/HorizonIoT-RL}
+  url={https://github.com/tahsin-nishat/HorizonIoT-RL}
 }
 ```
 
